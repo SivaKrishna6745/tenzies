@@ -19,8 +19,9 @@ function App() {
 
     const [dice, setDice] = useState(() => generateAllNewDice());
     const gameWon = dice.every((die) => die.isHeld) && dice.every((die) => die.value === dice[0].value);
-
+    const [count, setCount] = useState(0);
     function rollDice() {
+        setCount((prevCount) => prevCount + 1);
         if (gameWon) {
             setDice(() => generateAllNewDice());
         }
@@ -60,6 +61,7 @@ function App() {
                     />
                 ))}
             </div>
+            <div className="count">{`Number of times rolled: ${count}`}</div>
             <button type="button" onClick={rollDice} className="roll-dice" ref={buttonRef}>
                 {gameWon ? 'New Game' : 'Roll'}
             </button>
