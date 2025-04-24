@@ -28,6 +28,10 @@ Like all **_React + Vite_** projects, follow these steps
 -   Run **npm run dev** to start the project.
 -   Open your browser and visit http://localhost:5173/
 
+## Home Page
+
+![alt text](image.png)
+
 ### Why Vite?
 
 Vite is a modern front-end build tool that provides fast development and efficient bundling. [**Learn More here**](https://vite.dev/).
