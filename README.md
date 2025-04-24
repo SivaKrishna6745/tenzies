@@ -1,12 +1,33 @@
-# React + Vite
+# Tenzies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a game where players roll a bunch of dice (let's say 10 dice) and all dice should end up showing the same number.
 
-Currently, two official plugins are available:
+How to play:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   Roll all the 10 dice at once.
+-   Select the number that appears the most times on the dice and keep those dice aside.
+-   Roll the remaining dice again, if they match your chosen number, then keep those dice aside as well.
+-   Repeat the process until all the dice have the same number.
 
-## Expanding the ESLint configuration
+## Project Description
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project replicates the game **_Tenzies_**.
+
+-   Click the "Roll" button to roll the dice.
+-   To hold the dice with your chosen number, click on the die and it changes color, indicating selection.
+-   Repeat the same steps again until all dice match.
+-   Once all dice match, Confetti will appear, and the "Roll" button will change to "New Game". Click it to start again.
+
+## Project Installation
+
+Like all **_React + Vite_** projects, follow these steps
+
+-   Download the project.
+-   Open a terminal (either VS Code Terminal or Command Prompt) in the project's root folder.
+-   Run **npm i** to install dependencies.
+-   Run **npm run dev** to start the project.
+-   Open your browser and visit http://localhost:5173/
+
+### Why Vite?
+
+Vite is a modern front-end build tool that provides fast development and efficient bundling. [**Learn More here**](https://vite.dev/).
